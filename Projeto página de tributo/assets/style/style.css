@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans';
+}
+
+body {
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+}
+
+aside {
+    width: 500px;
+    background-color: antiquewhite;
+    overflow-y: scroll;
+}
+
+.category_area {
+    display: none;
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    top: 6%;
+    left: 0%;
+    z-index: 999;
+    background-color: navy;
+    color: white;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+
+.category_area h1 {
+    padding: 10px;
+}
+
+.category_area a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.category_img {
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+}
+
+.category_img img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+aside {
+    width: 100%;
+    max-width: 500px;
+}
+.aside_area_time {
+    max-width: 400px;
+    height: 100vh;
+}
+
+.aside_text_area h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.time_area_bar {
+    width: 10px;
+    height: auto;
+    background-color: #082345;
+    margin-left: 50px;
+}
+
+.time_text {
+    width: 300px;
+    height: 600px;
+    margin-left: 100px;
+}
+
+.time_ball {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    top: 17%;
+    left: 2.1%;
+    background-color: #082345;
+    border: 3px solid #ccc;
+    border-radius: 50%;
+}
+main {
+    width: 100%;
+    background-color: #082345;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #082345;
+    color: white;
+    max-width: 1500px;
+    height: 100vh;
+}
+
+.container h1 {
+    font-size: 50px;
+}
+
+.container h2 {
+    margin-bottom: 50px;
+}
+
+.face_img {
+    width: auto;
+    height: auto;
+}
+
+.face_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.container a {
+    display: block;
+    margin-top: 20px;
+    padding: 15px 40px;
+    background-color: rgb(255, 38, 0);
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+address {
+    margin-top: 200px;
+}
+@media (max-width: 700px) {
+    .container {
+        transform: scale(0.7);
+    }
+    .container h1 {
+        font-size: 30px;
+    }
+    .container h2 {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .aside_area {
+        transform: scale(0.5);
+        margin-right: 160px;
+    }
+    .time_text {
+        width: 300px;
+        height: 600px;
+        margin-left: 50px;
+    }
+    .time_area_bar {
+        margin: 0;
+    }
+    .time_ball {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 17%;
+        left: -20%;
+        background-color: #082345;
+        border: 3px solid #ccc;
+        border-radius: 50%;
+    }
+}
